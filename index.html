@@ -106,6 +106,40 @@ body {
       }
     }
 
+/* Previous styles remain unchanged */
+
+    /* Recent News Section */
+    #recent-news {
+      margin-top: 20px;
+    }
+
+    .news-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px; /* Adjust the space between items */
+      justify-content: center; /* Center items in the container */
+    }
+
+    .news-item {
+      flex: 1; /* Each item will grow to fill the space */
+      min-width: 280px; /* Minimum width before wrapping */
+    }
+
+    .news-item img {
+      width: 100%; /* Adjust as needed */
+      height: auto;
+      border-radius: 5px;
+    }
+
+    /* Responsive adjustments */
+    @media screen and (max-width: 768px) {
+      .news-container {
+        justify-content: space-around;
+      }
+      .news-item img {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -152,6 +186,24 @@ I occasionally go for hiking and hangout with my friends. I get awkward when it 
 
 <hr />
 
+<hr />
+
+    <h2 id="recent-news"><span style="font-family: 'PT Serif';">Recent News</span></h2>
+    <div class="news-container">
+      <div class="news-item">
+        <a href="https://www.weather.com/" target="_blank">
+          <img src="images/weathercom-placeholder.jpg" alt="Weather.com" style="width: 220px; height: 210px; float: left; margin: 10px" />
+          <p>Visit Weather.com for the latest updates.</p>
+        </a>
+      </div>
+      <div class="news-item">
+        <a href="https://www.accuweather.com/" target="_blank">
+          <img src="images/accuweather-placeholder.jpg" alt="AccuWeather" style="width: 220px; height: 210px; float: left; margin: 10px" />
+          <p>Check AccuWeather for accurate forecasts.</p>
+        </a>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
 
 <h2 id="-talks"><span style="font-family: 'PT Serif';">Talks</span></h2>
 
